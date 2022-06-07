@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "react-pnp-js-client-side-solution",
+    "id": "a16145a6-a4c9-47ba-aa58-4de429a77b6b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "react-pnp-js description"
+      },
+      "longDescription": {
+        "default": "react-pnp-js description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "react-pnp-js Feature",
+        "description": "The feature that activates elements of the react-pnp-js solution.",
+        "id": "84199ef2-0db7-4c6d-a78b-c32d90d47260",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/react-pnp-js.sppkg"
+  }
+}

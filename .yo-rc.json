@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "react-pnp-js",
+    "libraryId": "a16145a6-a4c9-47ba-aa58-4de429a77b6b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "react-pnp-js",
+    "solutionShortDescription": "react-pnp-js description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
