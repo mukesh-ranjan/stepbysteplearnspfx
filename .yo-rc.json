@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "lab-01-create-first-spfx-web-part",
+    "libraryId": "371b20a6-a0ff-407e-bb17-f003b70e3392",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "lab-01-create-first-spfx-web-part",
+    "solutionShortDescription": "lab-01-create-first-spfx-web-part description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

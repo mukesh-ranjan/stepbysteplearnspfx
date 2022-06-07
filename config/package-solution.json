@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "lab-01-create-first-spfx-web-part-client-side-solution",
+    "id": "371b20a6-a0ff-407e-bb17-f003b70e3392",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "lab-01-create-first-spfx-web-part description"
+      },
+      "longDescription": {
+        "default": "lab-01-create-first-spfx-web-part description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "lab-01-create-first-spfx-web-part Feature",
+        "description": "The feature that activates elements of the lab-01-create-first-spfx-web-part solution.",
+        "id": "ef235706-1b9d-486e-b1bb-47f448bd898d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/lab-01-create-first-spfx-web-part.sppkg"
+  }
+}
