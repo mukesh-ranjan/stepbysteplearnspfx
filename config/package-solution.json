@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "lab-02-understand-spfx-solution-structure-client-side-solution",
+    "id": "937d9a88-a214-4929-8f51-4f350f00cdb0",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "lab-02-understand-spfx-solution-structure description"
+      },
+      "longDescription": {
+        "default": "lab-02-understand-spfx-solution-structure description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "lab-02-understand-spfx-solution-structure Feature",
+        "description": "The feature that activates elements of the lab-02-understand-spfx-solution-structure solution.",
+        "id": "414570d3-9602-44ee-9381-b1e348a0a1d4",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/lab-02-understand-spfx-solution-structure.sppkg"
+  }
+}

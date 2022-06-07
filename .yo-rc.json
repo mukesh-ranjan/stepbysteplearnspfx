@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "lab-02-understand-spfx-solution-structure",
+    "libraryId": "937d9a88-a214-4929-8f51-4f350f00cdb0",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "lab-02-understand-spfx-solution-structure",
+    "solutionShortDescription": "lab-02-understand-spfx-solution-structure description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
