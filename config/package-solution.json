@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp-client-side-solution",
+    "id": "02a5ee20-c15b-425d-a966-51541cd978f5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp description"
+      },
+      "longDescription": {
+        "default": "lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp Feature",
+        "description": "The feature that activates elements of the lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp solution.",
+        "id": "87aa5fae-6dec-476f-af1b-6e9c1e8594de",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp.sppkg"
+  }
+}
