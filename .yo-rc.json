@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "lab-04-event-registration-app",
+    "libraryId": "fdad7801-a5e9-42dd-a009-7791a64ced94",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "lab-04-event-registration-app",
+    "solutionShortDescription": "lab-04-event-registration-app description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

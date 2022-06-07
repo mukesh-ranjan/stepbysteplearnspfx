@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "event-registration-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/eventRegistrationWp/EventRegistrationWpWebPart.js",
+          "manifest": "./src/webparts/eventRegistrationWp/EventRegistrationWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+      "globalName": "jquery"
+    },
+    "bootstrap": {
+      "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "EventRegistrationWpWebPartStrings": "lib/webparts/eventRegistrationWp/loc/{locale}.js"
+  }
+}

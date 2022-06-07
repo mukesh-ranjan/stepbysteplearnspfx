@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "lab-04-event-registration-app-client-side-solution",
+    "id": "fdad7801-a5e9-42dd-a009-7791a64ced94",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "lab-04-event-registration-app description"
+      },
+      "longDescription": {
+        "default": "lab-04-event-registration-app description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "lab-04-event-registration-app Feature",
+        "description": "The feature that activates elements of the lab-04-event-registration-app solution.",
+        "id": "484b8e90-f9a9-4a7b-93f1-15bc0b2ea76c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/lab-04-event-registration-app.sppkg"
+  }
+}

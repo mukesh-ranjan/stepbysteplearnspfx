@@ -1,0 +1,53 @@
+<div>
+    <div>
+        <table border="4">
+            <tr>
+                <td>
+                    Please Enter Registered User ID
+                </td>
+                <td>
+                    <input type="text" id="txtID">
+                </td>
+                <td>
+                    <input type="submit" id="btnRead" value="Read Registered User Info">
+                </td>
+            </tr>
+
+           <tr>
+               <td>User Name</td>
+               <td><input type="text" id="txtUserName"></td>
+           </tr> 
+           <tr>
+            <td>Email</td>
+            <td><input type="email" id="txtEmail"></td>
+           </tr> 
+           <tr>
+               <td>
+                   <select name="Batch" id="ddlBatch">
+                    <option value="Batch1">Batch 1</option>
+                    <option value="Batch2">Batch 2</option>
+                    <option value="Batch3">Batch 3</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+            <td>
+                <select name="LevelOfKnowledge" id="ddlLevelOfKnowledge">
+                 <option value="Beginner">Beginner</option>
+                 <option value="Intermediate">Intermediate</option>
+                 <option value="Expert">Expert</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Create" id="btnCreate">
+                <input type="submit" value="Read" id="btnRead">
+                <input type="submit" value="Update" id="btnUpdate">
+                <input type="submit" value="Delete" id="btnDelete">
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div id="divStatus"/>
+</div>
