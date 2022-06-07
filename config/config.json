@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "lab-03-la-1-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lab03La1/Lab03La1WebPart.js",
+          "manifest": "./src/webparts/lab03La1/Lab03La1WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Lab03La1WebPartStrings": "lib/webparts/lab03La1/loc/{locale}.js"
+  }
+}

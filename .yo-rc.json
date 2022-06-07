@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "lab-03-la-1",
+    "libraryId": "0824628d-750c-42a7-84f9-d2cfd6a921d3",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "lab-03-la-1",
+    "solutionShortDescription": "lab-03-la-1 description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

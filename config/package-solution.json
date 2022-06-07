@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "lab-03-la-1-client-side-solution",
+    "id": "0824628d-750c-42a7-84f9-d2cfd6a921d3",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "lab-03-la-1 description"
+      },
+      "longDescription": {
+        "default": "lab-03-la-1 description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "lab-03-la-1 Feature",
+        "description": "The feature that activates elements of the lab-03-la-1 solution.",
+        "id": "2faae4ae-0268-4cc8-a88e-dd16af3dd4a2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/lab-03-la-1.sppkg"
+  }
+}
