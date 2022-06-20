@@ -5,7 +5,7 @@ import { getSP } from "./pnpjsConfig";
 
 export interface IPnpServices {
   CreateItem(listName: string, itemObj: any): Promise<any>;
-  getItems(listName: string, columns: string[]): Promise<any>;
+  getItems(listName: string): Promise<any>;
   updateItem(listName: string, itemId: number, itemObj: any): Promise<any>;
   deleteItem(listName: string, itemId: number): Promise<any>;
 }

@@ -23,6 +23,7 @@ import {
 } from "office-ui-fabric-react";
 import { LIST_COLUMNS } from "../shared/constants";
 import { IListItem } from "../models/IListItem";
+import { GraphServices } from "../services/graphservices";
 //step2
 
 const stackTokens = { childrenGap: 50 };
@@ -57,7 +58,8 @@ export default class Errouiwpnpwp extends React.Component<
   IErrouiwpnpwpProps,
   IErrouiwpnpwpState
 > {
-  private _sp: PnpServices;
+  //private _sp: PnpServices;
+  private _sp: GraphServices;
   private _selection: Selection;
   constructor(props: IErrouiwpnpwpProps, state: IErrouiwpnpwpState) {
     super(props);
@@ -74,7 +76,7 @@ export default class Errouiwpnpwp extends React.Component<
       },
     };
 
-    this._sp = new PnpServices(this.props.context);
+    this._sp = new GraphServices(this.props.context);
     this._selection = new Selection({
       onSelectionChanged: () =>
         this.setState({ ListItem: this._onItemSelectionChanged() }),
@@ -88,7 +90,8 @@ export default class Errouiwpnpwp extends React.Component<
   }
 
   private async callAndBindDetailsList(message: string): Promise<any> {
-    await this._sp.getItems(this.props.listName).then((listItems) => {
+    await this._sp.getItems().then((listItems) => {
+      console.log("From nid TSX", listItems);
       this.setState({
         ListItems: listItems,
         status: message,
@@ -98,11 +101,14 @@ export default class Errouiwpnpwp extends React.Component<
 
   private async _createItem(): Promise<any> {
     await this._sp
-      .CreateItem(this.props.listName, this.state.ListItem)
-      .then((Id) => {
-        this.callAndBindDetailsList(
-          "New Item Created Successfully with ID " + Id
-        );
+      .CreateItem({
+        Title: this.state.ListItem.Title,
+        Email: this.state.ListItem.Email,
+        Batch: this.state.ListItem.Batch,
+        LevelOfKnowledge: this.state.ListItem.LevelOfKnowledge,
+      })
+      .then(() => {
+        this.callAndBindDetailsList("New Item Created Successfully with ID ");
       });
   }
 
@@ -112,12 +118,15 @@ export default class Errouiwpnpwp extends React.Component<
 
   private async _updateItem(): Promise<any> {
     await this._sp
-      .updateItem(this.props.listName, this.state.ListItem.Id, {
-        Title: this.state.ListItem.Title,
-        Email: this.state.ListItem.Email,
-        Batch: this.state.ListItem.Batch,
-        LevelOfKnowledge: this.state.ListItem.LevelOfKnowledge,
-      })
+      .updateItem(
+        {
+          Title: this.state.ListItem.Title,
+          Email: this.state.ListItem.Email,
+          Batch: this.state.ListItem.Batch,
+          LevelOfKnowledge: this.state.ListItem.LevelOfKnowledge,
+        },
+        this.state.ListItem.Id
+      )
       .then((Id) => {
         this.callAndBindDetailsList(`Item ${Id} Updated Successfully`);
       });
@@ -125,11 +134,9 @@ export default class Errouiwpnpwp extends React.Component<
 
   private async _deleteItem(): Promise<any> {
     try {
-      await this._sp
-        .deleteItem(this.props.listName, this.state.ListItem.Id)
-        .then(() => {
-          this.setState({ status: "Item Deleted Successfully" });
-        });
+      await this._sp.deleteItem(this.state.ListItem.Id).then(() => {
+        this.setState({ status: "Item Deleted Successfully" });
+      });
     } catch (error) {}
   }
 

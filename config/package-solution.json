@@ -1,12 +1,30 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp-client-side-solution",
+    "name": "spfxgraphapi",
     "id": "02a5ee20-c15b-425d-a966-51541cd978f5",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Manage.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.FullControl.All"
+      }
+    ],
     "developer": {
       "name": "",
       "websiteUrl": "",
@@ -35,6 +53,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/lab-05-event-registration-app-with-react-office-ui-fabric-and-pnp.sppkg"
+    "zippedPackage": "solution/spfxgraphapi.sppkg"
   }
 }
